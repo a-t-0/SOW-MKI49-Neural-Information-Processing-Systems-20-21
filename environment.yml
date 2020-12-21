@@ -1,0 +1,14 @@
+# run: conda env create --file environment.yml
+# include new packages: conda env update --file environment.yml
+name: nips_planning
+dependencies:
+- python=3.6
+- anaconda
+- conda:
+  - numpy>=1.11.2
+- pip
+- pip:
+  # works for regular pip packages
+  - pyexcel
+  - pyexcel-xlsx
+  - pyexcel-ods3
